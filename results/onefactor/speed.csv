@@ -1,0 +1,6 @@
+what,median_us,fastest_us,slowest_us,mean_us,std_us,repeats,loops_per_repeat,timed
+numpy_forward_scaled,9.177266602637246,9.107312501873821,9.34773749904707,9.20944108677629,0.07585579345410463,7,10000,"NumPy forward pass, scaled 11-vector in, scaled 88-vector out (what the authors' 30.9 us measures)"
+numpy_forward_full,10.793408396421,10.525829100515693,10.905437503242865,10.766691085882485,0.1213449231039446,7,10000,NumPy: raw parameters -> scaling -> forward pass -> implied vols
+torch_forward,14.481525000883266,14.0544084017165,14.632112497929484,14.431484542520982,0.18745355149347,7,10000,"PyTorch forward pass under no_grad, one thread, input already a 1 x 11 tensor (counterpart of Keras predict)"
+numpy_jacobian,25.245820899726823,25.123454199638218,25.779462495120242,25.30716788522633,0.20847408054573732,7,10000,"NumPy analytic 88 x 11 Jacobian, scaled space (counterpart of Table 2's NN gradient)"
+torch_autograd_jacobian,3120.481500052847,3078.9181659929454,3141.4354180451483,3118.127488015619,19.321140442943488,7,500,"torch.autograd.functional.jacobian of the same network, one thread"

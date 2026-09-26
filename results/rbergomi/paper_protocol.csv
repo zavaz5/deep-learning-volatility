@@ -1,0 +1,3 @@
+protocol,seed,n_train,epochs_run,n_rows,avg_rel_error_pct,largest_cell_mean_pct,smallest_cell_mean_pct,largest_cell_std_pct,max_rel_error_pct,p95_rel_error_pct,p99_rel_error_pct,share_of_cells_above_1pct
+"paper: 68,000 rows, early stopping on the test set, last-epoch weights",0,68000,241.0,12000,0.4365870548623572,1.0747011412889644,0.1605665208093325,2.094882976651701,55.20835935840562,1.301087429526033,2.8673603637295684,0.08454450757575757
+"ours: 60,000 rows, early stopping on 8,000 validation rows, best weights, test set untouched",0,60000,,12000,0.4649003709072593,1.1380400765009104,0.1976936126707204,2.136163817378294,58.03137170340749,1.4345875319282948,3.132219490543966,0.0978210227272727

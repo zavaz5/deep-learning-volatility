@@ -1,0 +1,17 @@
+figure,shows,command,seconds
+results/figures/rbergomi/surfaces.png,Five training surfaces and their mean,python -m src.plots --model rbergomi --figure surfaces,1.1463411659933629
+results/figures/rbergomi/learning_curves.png,"Learning curves, five seeds",python -m src.plots --model rbergomi --figure learning_curves,0.8546778329764493
+results/figures/rbergomi/error_heatmaps_test.png,Paper's Figure 6,python -m src.plots --model rbergomi --figure error_heatmaps_test,0.973487125011161
+results/figures/calibration_times_test.png,Paper's Figure 8 (both models),python -m src.plots --model rbergomi --figure calibration_times_test,0.8883242500014603
+results/figures/rbergomi/calibration_errors_test.png,Paper's Figure 9,python -m src.plots --model rbergomi --figure calibration_errors_test,1.0261035830480978
+results/figures/onefactor/error_heatmaps_test.png,Paper's Figure 7,python -m src.plots --model onefactor --figure error_heatmaps_test,0.9824424170074052
+results/figures/onefactor/calibration_errors_test.png,Paper's Figure 10,python -m src.plots --model onefactor --figure calibration_errors_test,1.028438624984119
+results/figures/rbergomi/seeds_val.png,Upgrade: five seeds,python -m src.experiments.seeds --model rbergomi,0.8497679999563843
+results/figures/rbergomi/edge_of_box_val.png,Upgrade: edge of the box,python -m src.experiments.edge_of_box --model rbergomi,1.6730218749726191
+results/figures/rbergomi/worst_errors_val.png,Critique: where the largest errors are,python -m src.experiments.worst_errors --model rbergomi,1.576887250004802
+results/figures/rbergomi/offline_cost.png,Critique: offline cost,python -m src.experiments.offline_cost --model rbergomi,0.8777527919737622
+results/figures/rbergomi/noise_robustness_val.png,"Stretch: noisy quotes (2,000 calibrations)",python -m src.experiments.noise_robustness --model rbergomi,2.2213692920049652
+results/figures/rbergomi/ablation_activation_val.png,Stretch: ELU against ReLU (trains one network),python -m src.experiments.ablation_activation --model rbergomi,129.33004891697783
+results/figures/rbergomi/sample_efficiency_val.png,Upgrade: sample efficiency (trains 12 networks),python -m src.experiments.sample_efficiency --model rbergomi,109.3826308749849
+results/figures/rbergomi/baselines_val.png,Upgrade: simple-regressor baselines (fits them),python -m src.experiments.baselines --model rbergomi,227.32770641701063
+results/figures/rbergomi/authors_calibration_test.png,Stretch: the authors' calibrations against ours (reads the test set),python -m src.final_eval --model rbergomi --authors-calibration,1.980212082969956

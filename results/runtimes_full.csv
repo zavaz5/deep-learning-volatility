@@ -1,0 +1,26 @@
+step,command,seconds
+data rbergomi,python -m src.data --model rbergomi,0.8298176659736782
+"train rbergomi, seeds 0-4 in parallel",python -m src.train --model rbergomi --seed <s>,93.468735500006
+evaluate rbergomi,python -m src.evaluate --model rbergomi,1.826590292039327
+speed rbergomi,python -m src.speed --model rbergomi,17.55345262499759
+calibrate rbergomi,python -m src.calibrate --model rbergomi,315.6477990410058
+plots rbergomi all,python -m src.plots --model rbergomi --figure all,1.952865458035376
+data onefactor,python -m src.data --model onefactor,0.842899875016883
+"train onefactor, seeds 0-4 in parallel",python -m src.train --model onefactor --seed <s>,110.58471058297437
+evaluate onefactor,python -m src.evaluate --model onefactor,1.800189625006169
+speed onefactor,python -m src.speed --model onefactor,17.444614208012354
+calibrate onefactor,python -m src.calibrate --model onefactor,303.7365796670201
+plots onefactor all,python -m src.plots --model onefactor --figure all,1.8236793749965727
+seeds rbergomi,python -m src.experiments.seeds --model rbergomi,0.8550297080073506
+edge_of_box rbergomi,python -m src.experiments.edge_of_box --model rbergomi,1.6923760829959065
+worst_errors rbergomi,python -m src.experiments.worst_errors --model rbergomi,1.5959472499671392
+offline_cost rbergomi,python -m src.experiments.offline_cost --model rbergomi,0.8814259999780916
+sample_efficiency rbergomi,python -m src.experiments.sample_efficiency --model rbergomi,109.3826308749849
+baselines rbergomi,python -m src.experiments.baselines --model rbergomi,227.32770641701063
+final_eval rbergomi,python -m src.final_eval --model rbergomi,538.9898752499721
+final_eval onefactor,python -m src.final_eval --model onefactor,301.90669391700067
+ablation_activation rbergomi,python -m src.experiments.ablation_activation --model rbergomi,129.38869058398996
+noise_robustness rbergomi,python -m src.experiments.noise_robustness --model rbergomi,2.2399599160416983
+"final_eval rbergomi, paper protocol",python -m src.final_eval --model rbergomi --paper-protocol,114.98502658301732
+"final_eval rbergomi, authors calibration",python -m src.final_eval --model rbergomi --authors-calibration,1.980212082969956
+"final_eval onefactor, authors calibration",python -m src.final_eval --model onefactor --authors-calibration,1.9728205840219744

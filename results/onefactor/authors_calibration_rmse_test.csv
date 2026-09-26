@@ -1,0 +1,6 @@
+definition,description,n_dropped,n_rows_with_zero_vol,n_surfaces,mean_pct,median_pct,q95_pct,q99_pct,max_pct
+paper_as_coded,"authors' re-priced surface against the target, root of the mean; rows whose re-pricing failed dropped, as in their notebook",23,10,4977,0.13091479975576314,0.11481499397251665,0.2332240486576775,0.330585522356646,4.038516019248565
+paper_as_coded_no_zero_vols,"as above, also dropping the rows whose re-priced surface holds a zero implied vol (failed inversions the notebook keeps)",33,0,4967,0.1272362500376992,0.11471089648645968,0.23150627499755375,0.31301357976739985,1.0108429872686595
+ours_lm,our network surface at our Levenberg-Marquardt fit against the target,0,0,5000,0.0724481607362,0.0606117025,0.15022727450000004,0.21772662440000065,0.37982057
+ours_trf,our network surface at our fit from the authors' actual call (least_squares default) against the target,0,0,5000,0.0724481597308,0.060611706,0.15022725550000005,0.21772662440000065,0.37982062
+authors_params_our_network,our network surface at the authors' fitted parameters against the target,0,0,5000,0.12247134651240717,0.10903003976134455,0.22223498073529893,0.2955317723419783,0.5305652645419651

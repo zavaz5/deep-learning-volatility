@@ -1,0 +1,4 @@
+{
+  "seconds": 57,
+  "what": "jupyter nbconvert --execute of DeepLearningVolatility.ipynb, whole notebook, this machine"
+}

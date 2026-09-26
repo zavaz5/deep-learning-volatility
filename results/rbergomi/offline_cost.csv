@@ -1,0 +1,10 @@
+quantity,value,unit,source
+training_samples,80000.0,surfaces,"paper, Section 2.4.1, p. 10"
+mc_seconds_per_surface,0.5,s,"paper, Table 2, p. 18"
+offline_mc_cpu_hours,11.11111111111111,h,paper's numbers multiplied: samples x seconds per surface
+network_training_minutes,1.4157517006999114,min,"ours, train_summary_seed0.json (one CPU thread)"
+lm_evaluations_per_calibration,7.5274,evaluations,"ours, calibration_summary_val.csv"
+mc_surfaces_per_calibration,90.3288,surfaces,assumption: 1 + 11 surfaces per evaluation (finite differences)
+mc_seconds_per_calibration,45.1644,s,assumption x paper's seconds per surface
+network_ms_per_calibration,0.4109123154077679,ms,"ours, calibration_summary_val.csv"
+break_even_calibrations,887.5421748999678,calibrations,offline cost / time saved per calibration

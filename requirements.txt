@@ -1,0 +1,18 @@
+# Exact versions used for every number in this repository. Python 3.13.
+#
+# torch: CPU only. On macOS the default wheel is already CPU-only. On Linux or Windows install
+# torch first from the CPU index, then the rest:
+#   pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+torch==2.14.0
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.6
+matplotlib==3.11.2
+pytest==9.1.1
+# For the research notebook (DeepLearningVolatility.ipynb) and its execution from the command line.
+jupyter==1.1.1
+notebook==7.6.3
+nbconvert==7.17.1
+ipykernel==7.3.0

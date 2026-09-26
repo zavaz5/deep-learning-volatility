@@ -1,0 +1,16 @@
+# Smoke-test outputs of --quick runs (regenerated in minutes, never the real results)
+results/quick/
+
+# Run logs
+logs/
+
+# Virtual environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+~$*
+.ipynb_checkpoints/
+*.pyc
+.pytest_cache/
+.DS_Store

@@ -1,0 +1,14 @@
+{
+  "seed": 4,
+  "activation": "elu",
+  "n_train": 60000,
+  "n_val": 8000,
+  "epochs_run": 156,
+  "best_epoch": 131,
+  "stopped_early": true,
+  "best_val_loss_keras": 0.022735474993503327,
+  "best_val_rmse": 0.022911002233677202,
+  "train_loss_running_at_best": 0.024962517393958012,
+  "train_rmse_at_best": 0.022743122764378166,
+  "seconds": 72.31639137503225
+}

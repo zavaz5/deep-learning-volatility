@@ -1,0 +1,9 @@
+model,setting,n_surfaces,mean_evaluations,median_evaluations,jacobian_condition_median,jacobian_condition_q90
+rbergomi,"L-BFGS-B as run: bounds, memory 10",500,94.658,78.5,38.054489924329644,132.9981294171201
+rbergomi,"L-BFGS-B without bounds, memory 10",500,99.538,81.5,38.054489924329644,132.9981294171201
+rbergomi,"L-BFGS-B with bounds, memory 20",500,51.876,48.0,38.054489924329644,132.9981294171201
+rbergomi,BFGS: full curvature matrix,500,77.948,76.0,38.054489924329644,132.9981294171201
+onefactor,"L-BFGS-B as run: bounds, memory 10",500,57.876,52.0,17.268258697606367,38.82215903846201
+onefactor,"L-BFGS-B without bounds, memory 10",500,57.696,52.0,17.268258697606367,38.82215903846201
+onefactor,"L-BFGS-B with bounds, memory 20",500,38.366,36.0,17.268258697606367,38.82215903846201
+onefactor,BFGS: full curvature matrix,500,70.85,69.5,17.268258697606367,38.82215903846201
